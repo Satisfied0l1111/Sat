@@ -1,0 +1,9 @@
+import string
+
+def get_character_pool(use_symbols=True, use_digits=True):
+    chars = list(string.ascii_letters)
+    if use_symbols:
+        chars += list("!@#$%^&*()-_=+[]{};:,.<>?")
+    if use_digits:
+        chars += list(string.digits)
+    return chars
