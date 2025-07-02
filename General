@@ -1,0 +1,13 @@
+from generator import generate_password
+
+def main():
+    print("Random Password Generator")
+    length = int(input("Enter password length (default 12): ") or 12)
+    use_symbols = input("Include symbols? (y/n): ").lower() == 'y'
+    use_digits = input("Include digits? (y/n): ").lower() == 'y'
+
+    password = generate_password(length, use_symbols, use_digits)
+    print(f"Generated password: {password}")
+
+if name == "main":
+    main()
